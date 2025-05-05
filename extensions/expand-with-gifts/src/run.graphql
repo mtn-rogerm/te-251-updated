@@ -1,0 +1,23 @@
+query RunInput {
+  cart {
+    lines {
+      id
+      quantity
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+          title
+          product {
+            title
+          }
+        }
+      }
+    }
+    buyerIdentity {
+      customer {
+        numberOfOrders
+      }
+    }
+  }
+}
