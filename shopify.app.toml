@@ -3,7 +3,7 @@
 client_id = "f0e5d854407b2a9accd0d8f04f9924ce"
 name = "te-251"
 handle = "te-251"
-application_url = "https://pressure-sister-operation-male.trycloudflare.com"
+application_url = "https://very-jump-probability-tries.trycloudflare.com"
 embedded = true
 
 [build]
@@ -27,9 +27,9 @@ scopes = "write_products"
 
 [auth]
 redirect_urls = [
-  "https://pressure-sister-operation-male.trycloudflare.com/auth/callback",
-  "https://pressure-sister-operation-male.trycloudflare.com/auth/shopify/callback",
-  "https://pressure-sister-operation-male.trycloudflare.com/api/auth/callback"
+  "https://very-jump-probability-tries.trycloudflare.com/auth/callback",
+  "https://very-jump-probability-tries.trycloudflare.com/auth/shopify/callback",
+  "https://very-jump-probability-tries.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

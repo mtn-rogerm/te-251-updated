@@ -1,0 +1,24 @@
+query RunInput {
+  cart {
+    lines {
+      id
+      quantity
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+          title
+          bundleId: metafield (key: "bundle_id", namespace: "custom") {
+            value
+          }
+          product {
+            title
+            bundleId: metafield (key: "bundle_id", namespace: "custom") {
+              value
+            }
+          }
+        }
+      }
+    }
+  }
+}

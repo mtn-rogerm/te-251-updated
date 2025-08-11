@@ -1,0 +1,22 @@
+query RunInput {
+  presentmentCurrencyRate
+  cart {
+    lines {
+      id
+      quantity
+      merchandise {
+        __typename
+        ... on ProductVariant {
+          id
+          title
+          product {
+            bundledComponentData: metafield(namespace: "custom", key: "bundle_configuration") {
+              type
+              value
+            }
+          }
+        }
+      }
+    }
+  }
+}
