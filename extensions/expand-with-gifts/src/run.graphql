@@ -3,13 +3,26 @@ query RunInput {
     lines {
       id
       quantity
+      noImage: attribute(key: "_no-image") {
+        value
+      }
       merchandise {
         __typename
         ... on ProductVariant {
           id
           title
+          bundleId: metafield (key: "bundle_id", namespace: "custom") {
+            value
+          }
           product {
             title
+            bundledComponentData: metafield(namespace: "custom", key: "bundle_configuration") {
+              type
+              value
+            }
+            bundleId: metafield (key: "bundle_id", namespace: "custom") {
+              value
+            }
           }
         }
       }
